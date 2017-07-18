@@ -2,8 +2,8 @@
 <resources>
     <declare-styleable name="CircularProgressBar">
         <attr name="sweepAngle" format="integer"/>
-        <attr name="backgroundLineWidth" format="integer"/>
-        <attr name="progressLineWidth" format="integer"/>
+        <attr name="backgroundLineWidth" format="dimension|reference"/>
+        <attr name="progressLineWidth" format="dimension|reference"/>
         <attr name="backgroundColor" format="color|reference"/>
         <attr name="progressColor" format="color|reference"/>
         <attr name="maxValue" format="integer"/>

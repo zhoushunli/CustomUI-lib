@@ -56,8 +56,8 @@ public class CircularProgressBar extends View {
     private void initAttrs(Context context, AttributeSet attrs) {
         TypedArray ta = context.obtainStyledAttributes(attrs, R.styleable.CircularProgressBar);
         sweepAngle = ta.getInteger(R.styleable.CircularProgressBar_sweepAngle, 300);
-        backgroundLineWidth = ta.getInteger(R.styleable.CircularProgressBar_backgroundLineWidth, UIUtil.dp2px(5, getContext()));
-        progressLineWidth = ta.getInteger(R.styleable.CircularProgressBar_progressLineWidth, UIUtil.dp2px(5, getContext()));
+        backgroundLineWidth = ta.getDimensionPixelSize(R.styleable.CircularProgressBar_backgroundLineWidth, UIUtil.dp2px(5, getContext()));
+        progressLineWidth = ta.getDimensionPixelSize(R.styleable.CircularProgressBar_progressLineWidth, UIUtil.dp2px(5, getContext()));
         backgroundColor = ta.getColor(R.styleable.CircularProgressBar_backgroundColor, Color.GRAY);
         progressColor = ta.getColor(R.styleable.CircularProgressBar_progressColor, getResources().getColor(R.color.colorAccent));
         maxValue = ta.getInteger(R.styleable.CircularProgressBar_maxValue, 100);
